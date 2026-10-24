@@ -1,0 +1,750 @@
+SIMONIUM PLATFORM
+
+MASTER PRODUCT, ARCHITECTURE, SECURITY AND IMPLEMENTATION PROMPT
+
+Platform name: SIMONIUM
+Full meaning: Scientific Information Management, Organization, Network, Intelligence and Unified Multidisciplinary Platform
+Tagline: Connecting Knowledge. Enabling Discovery.
+Primary objective: Connect people, information, education, healthcare, scientific research, communities, institutions, and discoveries through one secure, intelligent, integrated, and extensible platform.
+
+---
+
+PART I — PROJECT CONTINUITY AND DEVELOPMENT RULES
+
+1. Continue the Existing SIMONIUM Project
+
+You are working on my existing SIMONIUM project in Google AI Studio.
+
+Your first responsibility is to inspect and understand the actual existing project before making changes.
+
+Do not:
+
+- Create a separate project.
+- Restart the application from scratch.
+- Delete or overwrite working files unnecessarily.
+- Replace existing technologies without a demonstrated technical reason.
+- Assume that a feature works merely because its screen exists.
+- Generate fake authentication, simulated database operations, or misleading success messages.
+- Publish or deploy the application before development, review, and testing are complete.
+
+You must:
+
+1. Inspect the project structure, source files, dependencies, application framework, screens, routing, state management, authentication, database, APIs, and existing integrations.
+2. Identify implemented, incomplete, missing, broken, and untested functionality.
+3. Preserve working features and reuse existing components.
+4. Continue implementation directly in the existing project.
+5. Make changes in manageable, logically connected phases.
+6. Test implemented features and report actual results.
+7. Maintain consistency across the website, Android application, backend, database, and user interface.
+
+If the existing project uses a different framework or backend from the proposed design, adapt the design to the current architecture when practical. Do not rebuild the entire application simply to follow a preferred technology.
+
+Start by inspecting the existing project, then implement the highest-priority incomplete feature. Do not stop after producing a plan.
+
+PART II — VISION, PURPOSE, AND VALUE
+
+2. What SIMONIUM Must Become
+
+SIMONIUM is one integrated multidisciplinary platform for organizing information, connecting knowledge, enabling collaboration, supporting education, facilitating scientific research, and helping communities and institutions address real-world problems.
+
+It must not become merely:
+
+- A collection of unrelated dashboards.
+- A basic school management application.
+- A public document-storage website.
+- A medical-record application.
+- A chatbot without a structured information system.
+
+Instead, SIMONIUM must connect these activities through a shared, secure, permission-controlled information architecture.
+
+Its central purpose is to transform scattered observations, questions, documents, educational materials, research data, and discoveries into organized, traceable, reviewable, and useful knowledge.
+
+The platform must help people:
+
+- Find relevant information.
+- Understand the source and reliability of information.
+- Connect with people who have relevant knowledge.
+- Collaborate on questions and projects.
+- Learn from verified material.
+- Conduct responsible research.
+- Submit new observations and discoveries.
+- Review, correct, and improve information.
+- Share approved findings with appropriate audiences.
+- Preserve knowledge for future use.
+
+3. The Problems SIMONIUM Is Designed to Address
+
+Design the system to address these potential problems:
+
+1. Useful information is scattered across documents, images, videos, institutions, devices, and separate systems.
+2. People who have related questions or knowledge may not know how to find one another.
+3. Students may learn theory without enough opportunities to connect it to practical questions.
+4. Teachers need organized resources and review workflows to guide learning.
+5. Researchers need traceable, relevant, authorized information and collaboration.
+6. Healthcare professionals and researchers need safe ways to collaborate on appropriate health questions.
+7. Community observations may not reach the people or institutions capable of investigating them.
+8. Discoveries and new ideas need structured documentation and qualified review.
+9. Information can be duplicated, outdated, inaccurate, or shared without sufficient context.
+10. Language differences can prevent people from accessing useful knowledge.
+11. Sensitive information requires controlled access, accountability, and privacy protection.
+
+Treat these as design goals to investigate and address, not as claims that every problem occurs everywhere or has already been solved.
+
+PART III — ONE PLATFORM, ONE CONNECTED INFORMATION SYSTEM
+
+4. Integrated Architecture
+
+SIMONIUM must operate as one coherent platform with shared services, consistent identity management, and a secure backend.
+
+Its initial core modules are:
+
+1. Health
+2. Education
+3. Research & Discovery
+4. Community
+
+The architecture must also support institutions, professional collaboration, administration, and future modules.
+
+Use a modular architecture that allows new modules, roles, workflows, languages, data types, and integrations to be introduced without rebuilding the entire application.
+
+The modules must share common services where appropriate:
+
+- Authentication and identity.
+- User profiles and role permissions.
+- Search and information discovery.
+- Notifications.
+- File management.
+- Review and verification workflows.
+- Audit history.
+- Language preferences.
+- Settings.
+- Secure data access.
+- Backup and recovery.
+
+A shared platform does not mean that every user can access every record. All information access must be controlled by explicit authorization policies.
+
+5. Connect Related Information Across Modules
+
+Implement authorized connections between related information.
+
+Examples:
+
+- A community observation may generate a research question.
+- A research question may lead to an authorized data-collection task.
+- A teacher may adapt approved research material into a learning activity.
+- A student may submit an assignment or permitted field observation.
+- A teacher may review and correct that submission.
+- An authorized researcher may assess relevant, eligible findings.
+- A healthcare professional may contribute appropriately de-identified observations to an approved health research workflow.
+- An institution may coordinate a project with authorized members.
+- A discoverer may submit a new method or proposed solution.
+- Approved results may inform new learning activities, further research, or community initiatives.
+
+Maintain links between the original source, related questions, submissions, reviews, findings, and approved outputs.
+
+Do not automatically share information across modules simply because the records are related. Check authorization, confidentiality, consent, and purpose before every cross-module access or transfer.
+
+PART IV — USERS, ROLES, AND DASHBOARDS
+
+6. Role-Based Access Control
+
+Implement secure Role-Based Access Control (RBAC), with server-enforced permissions.
+
+The initial roles are:
+
+6.1 Community Member
+
+Can access appropriate public information, submit community questions and observations, participate in authorized initiatives, and track their own submissions.
+
+6.2 Student
+
+Can access permitted educational materials, view assignments, submit work, receive teacher feedback, and participate in authorized learning or research activities.
+
+6.3 Teacher
+
+Can manage authorized learning activities, review student submissions, correct mistakes, provide feedback, and forward suitable reviewed material into approved research workflows.
+
+6.4 Researcher
+
+Can manage authorized research questions, proposals, tasks, data requests, collaboration, analysis, methodology, sources, and research findings.
+
+6.5 Discoverer
+
+Can document discoveries, new ideas, observations, proposed methods, and supporting evidence, while protecting confidential or unpublished work.
+
+6.6 Healthcare Professional
+
+Can access authorized professional resources, contribute appropriate health observations, collaborate on approved research, and access only those patient records and clinical resources for which they have legitimate authorization.
+
+6.7 Institution
+
+Can manage its authorized organizational profile, projects, resources, memberships, and collaborations within its assigned permissions.
+
+6.8 Administrator
+
+Can manage platform configuration, authorized user and role administration, verification workflows, module configuration, security oversight, audit records, and approved system maintenance.
+
+Do not allow users to grant themselves privileged roles. Use appropriate evidence, verification, and authorized approval.
+
+Support the possibility that one person may have more than one approved role. If multiple roles are assigned, apply the permissions explicitly granted for each role without accidentally exposing unrelated information.
+
+7. Private Administrator Access
+
+The Administrator dashboard must not appear as a normal module on the public dashboard or ordinary module-selection screen.
+
+Create a protected administrative interface accessible only to authorized administrators.
+
+Security requirements:
+
+- Server-side role verification.
+- Database-level access policies.
+- Secure session handling.
+- Appropriate multi-factor authentication where supported.
+- Rate limiting and protection against unauthorized login attempts.
+- Audit logs for sensitive administrative actions.
+- Secure administrator account recovery.
+- No privileged secrets in client-side code.
+- No reliance on hiding buttons or concealing a URL.
+
+An ordinary user must not gain administrator privileges by editing browser state, local storage, a request parameter, or client-side code.
+
+Administrative access must be limited to necessary responsibilities. Admin status must not automatically provide unrestricted access to confidential healthcare records or private research.
+
+PART V — THE INFORMATION LIFECYCLE
+
+8. The SIMONIUM Information Cycle
+
+Implement the following core lifecycle:
+
+Information Submission → Organization → Review → Verification → Authorized Sharing → Learning and Research → Approved Findings → Continued Discovery
+
+Stage 1: Submission
+
+Authorized users submit information, questions, observations, documents, images, records, or research materials relevant to their roles.
+
+Stage 2: Organization
+
+Classify information by module, topic, source, date, language, institution, confidentiality, status, and relevant project.
+
+Stage 3: Review
+
+Route submissions to authorized reviewers. Reviewers can request corrections, provide explanations, approve, or reject submissions according to the workflow.
+
+Stage 4: Verification
+
+Where necessary, verify the source, evidence, methodology, identity, or relevant professional authorization.
+
+Do not mark information as verified merely because it was submitted, uploaded, translated, summarized, or processed by AI.
+
+Stage 5: Authorized Sharing
+
+Share information with the appropriate audience according to permissions and confidentiality rules. Approval for internal use must not automatically imply approval for public publication.
+
+Stage 6: Use
+
+Authorized users use suitable information for education, community initiatives, professional work, research, analysis, and discovery.
+
+Stage 7: Findings
+
+Store relevant results with their sources, methods, limitations, review status, and links to the original information.
+
+Stage 8: Continued Discovery
+
+Allow approved findings to generate new questions, learning activities, and research proposals.
+
+Maintain an audit trail for significant edits, review decisions, permissions, and publication actions.
+
+9. Information Statuses and Provenance
+
+Support appropriate states such as:
+
+- Draft.
+- Submitted.
+- Pending review.
+- Under review.
+- Correction requested.
+- Verified.
+- Approved for a defined purpose.
+- Published to an authorized audience.
+- Rejected.
+- Archived.
+- Withdrawn.
+
+Record who submitted information, where it originated, when it was submitted, which authorized users reviewed it, what changes were made, and the reasons for significant decisions.
+
+Do not confuse these distinct concepts:
+
+- Source authenticity.
+- Factual accuracy.
+- Professional review.
+- Scientific validity.
+- Permission to publish.
+- Permission to access.
+
+They require different checks and may have different outcomes.
+
+PART VI — MODULE REQUIREMENTS
+
+10. Health Module
+
+Support:
+
+- Authorized health information.
+- Professional collaboration.
+- Appropriate health observations.
+- Approved research questions.
+- De-identified research datasets where suitable.
+- Review and verification workflows.
+- Secure documents and records.
+- Health education and research resources.
+
+Protect identifiable patient information. Implement appropriate consent, confidentiality, and access policies.
+
+Do not expose private patient records in public dashboards, general search results, public notifications, or unrestricted research datasets.
+
+Do not represent AI-generated medical suggestions as verified diagnoses or treatment decisions.
+
+11. Education Module
+
+Support:
+
+- Learning resources.
+- Authorized classes and educational groups.
+- Assignments and tasks.
+- Student submissions.
+- Teacher reviews and corrections.
+- Feedback and progress tracking.
+- Educational resources linked to approved research.
+- Practical learning activities based on permitted community observations.
+
+Protect student identity and educational records.
+
+12. Research & Discovery Module
+
+Support:
+
+- Research questions.
+- Research proposals.
+- Tasks and projects.
+- Data requests and authorized datasets.
+- Sources and references.
+- Research methodology.
+- Collaboration.
+- Analysis.
+- Review and correction.
+- Findings and limitations.
+- Approval and publication workflows.
+
+Clearly distinguish raw data, hypotheses, unverified claims, reviewed findings, and approved conclusions.
+
+Never invent references, statistical findings, or evidence.
+
+13. Community Module
+
+Support:
+
+- Community questions.
+- Local observations.
+- Community knowledge.
+- Projects and initiatives.
+- Appropriate educational activities.
+- Collaboration with institutions and researchers.
+- Submission tracking and feedback.
+
+Protect sensitive community information, personal identities, and confidential reports.
+
+14. Institution Services
+
+Allow authorized institutions to:
+
+- Maintain institutional profiles.
+- Manage verified representatives.
+- Organize projects and resources.
+- Coordinate collaboration.
+- Manage institution-owned information.
+- Review relevant project activity.
+- Control access to institutional records.
+
+Require appropriate authorization before assigning institutional representatives or granting access to private institutional data.
+
+PART VII — DATABASE AND BACKEND
+
+15. Shared Database
+
+Inspect and reuse the existing database and backend where appropriate.
+
+If the project already uses Supabase, inspect its configuration and reuse the existing project rather than creating unnecessary duplicate services.
+
+Create or complete suitable models for:
+
+- User profiles.
+- Authentication references.
+- Roles and permissions.
+- Identity verification requests.
+- Institutions and memberships.
+- Modules and access assignments.
+- Information records.
+- Sources and attachments.
+- Research questions and projects.
+- Educational activities and submissions.
+- Reviews and corrections.
+- Approval decisions.
+- Notifications.
+- Language preferences.
+- Country and calling-code records.
+- Settings.
+- Audit events.
+- Backup and recovery records.
+
+Use appropriate identifiers, timestamps, relationships, validation, constraints, indexes, and safe migrations.
+
+Do not duplicate authentication passwords or create insecure custom password storage.
+
+16. Database Security
+
+Enforce access rules on the backend, not only in the user interface.
+
+If using Supabase:
+
+- Configure Row Level Security (RLS) on relevant tables.
+- Apply least-privilege policies.
+- Protect private storage objects.
+- Validate user permissions for every sensitive operation.
+- Prevent unauthorized access to other users' records.
+- Prevent users from changing their own roles to privileged roles.
+- Test direct API access and attempted permission escalation.
+
+Never expose privileged database keys, service-role secrets, or private API credentials in public client code.
+
+PART VIII — REGISTRATION AND ACCOUNT MANAGEMENT
+
+17. Login and Registration
+
+The initial application screen must provide a clear login experience.
+
+Include:
+
+- Login.
+- Account registration.
+- Forgot Password.
+- Password reset.
+- Password visibility.
+- Verification-code entry.
+- Secure logout.
+- Session expiration and renewal.
+- Clear error and validation messages.
+
+Registration should guide the user through appropriate steps without overwhelming them.
+
+Registration workflow
+
+1. Enter basic account details.
+2. Select the country and enter the phone number where applicable.
+3. Select a supported language.
+4. Request an appropriate role or module access.
+5. Provide required evidence for roles that need verification.
+6. Complete actual email or SMS verification where configured.
+7. Wait for authorized review where required.
+8. Receive a clear status and access only the approved functionality.
+
+Use appropriate evidence for each role:
+
+- Students: school identity card or accepted student evidence.
+- Teachers: staff ID or institution-issued evidence.
+- Healthcare professionals: appropriate professional credentials.
+- Researchers: institutional affiliation or accepted research credentials.
+- Institutions: authorized institutional documentation.
+- Other roles: proportionate evidence based on the access being requested.
+
+Do not assume an uploaded document is authentic. Support secure review, rejection reasons, resubmission, and status tracking.
+
+Protect uploaded documents and define appropriate retention and deletion rules.
+
+18. Passwords and Verification Codes
+
+Implement secure password reset and account verification using a real configured service.
+
+Requirements:
+
+- Verification-code expiration.
+- Rate limiting.
+- Resend cooldown.
+- Abuse protection.
+- Secure password-reset tokens or codes.
+- Appropriate session invalidation after sensitive account changes.
+- Clear feedback when a service is unavailable.
+
+Never hardcode production verification codes, log secrets, or falsely report successful verification.
+
+PART IX — GLOBAL LANGUAGES AND TELEPHONE CODES
+
+19. Worldwide Language Support
+
+Build an extensible localization system.
+
+Include:
+
+- Searchable language selection.
+- Saved user language preferences.
+- Translation resources for menus, forms, validation messages, notifications, and help text.
+- Unicode support.
+- Right-to-left layouts where required.
+- Fallback behavior for untranslated strings.
+- A process for adding and testing new translations.
+
+Prioritize the languages actually supported by the project, including Kinyarwanda, English, French, and Kiswahili where translations are available.
+
+Additional languages must be addable without rewriting the application.
+
+Distinguish between languages listed in the interface and languages fully translated and tested.
+
+Retain original scientific or clinical content where necessary. Translations must not silently change scientific meaning.
+
+20. Countries and International Telephone Calling Codes
+
+Maintain a reliable registry of countries and territories containing:
+
+- Country and territory names.
+- ISO codes.
+- International calling codes.
+- Appropriate phone-number validation rules.
+
+Examples:
+
+- Rwanda: +250.
+- Uganda: +256.
+- Kenya: +254.
+- United States: +1.
+
+Support:
+
+- Searchable country selection.
+- Calling-code selection.
+- International number formatting.
+- Phone-number validation.
+- Shared calling codes.
+- Country and phone-number editing.
+- Actual SMS verification when a provider is configured.
+
+Use a reliable phone-number library or maintained dataset rather than manually inventing the global list.
+
+Do not assume that a calling code uniquely identifies one country in every situation.
+
+PART X — AI AND INTELLIGENT INFORMATION MANAGEMENT
+
+21. AI-Assisted Functions
+
+Use AI as an assistant to people, not as an unrestricted authority.
+
+Where technically feasible and securely configured, AI may help:
+
+- Classify submitted information.
+- Suggest keywords and topics.
+- Find potentially related records.
+- Summarize authorized documents.
+- Translate information.
+- Identify possible duplicates or inconsistencies.
+- Assist with literature and source organization.
+- Support educational explanations.
+- Help researchers explore permitted data.
+- Generate questions for human review.
+
+AI must not:
+
+- Automatically certify factual accuracy.
+- Approve professional credentials.
+- Grant privileged access.
+- Publish confidential data without authorization.
+- Invent sources or statistical evidence.
+- Replace required professional or scientific review.
+- Access information beyond the current user's permissions.
+
+Identify AI-generated suggestions and allow users to review, correct, reject, or approve them as appropriate.
+
+Before sending information to an external AI provider, verify that the transfer is authorized and consistent with applicable privacy rules.
+
+PART XI — SEARCH, NOTIFICATIONS, AND USER CONTROLS
+
+22. Search and Discovery
+
+Provide relevant search and filters based on:
+
+- Keywords.
+- Module.
+- Topic.
+- Source.
+- Date.
+- Language.
+- Information status.
+- Institution or project, where authorized.
+
+Search must respect access permissions. It must not reveal private record titles, confidential metadata, or sensitive information to unauthorized users.
+
+Allow users to discover related information without bypassing permissions.
+
+23. Notifications
+
+Support appropriate notifications for:
+
+- New assignments.
+- Submission status.
+- Requested corrections.
+- Review decisions.
+- Approved access requests.
+- Relevant project updates.
+- Security events affecting the user's own account.
+
+Do not include confidential patient information, passwords, verification codes, or sensitive documents in ordinary notification text.
+
+24. Required Controls
+
+Implement and test the appropriate use of:
+
+- Back.
+- Next.
+- Save.
+- Edit.
+- Delete.
+- Cancel.
+- Search.
+- Filters.
+- Settings.
+- Language selection.
+- Password change.
+- Forgot Password.
+- Verification codes.
+- Notifications.
+- File upload and download.
+- Backup.
+- Restore.
+- Logout.
+
+Every visible control must perform its intended function.
+
+Require confirmation and authorization for destructive actions. Record significant changes in the audit trail.
+
+PART XII — SECURITY, PRIVACY, AND RELIABILITY
+
+25. Security Requirements
+
+Apply:
+
+- Secure authentication and session handling.
+- Server-enforced role and record permissions.
+- Database access policies.
+- Encryption in transit and appropriate encryption at rest.
+- Input validation and safe output handling.
+- Secure file uploads.
+- Rate limiting.
+- Abuse and unauthorized-access protection.
+- Audit logging.
+- Privacy-aware notifications.
+- Safe backup and recovery.
+- Appropriate data retention and deletion.
+- Protection against privilege escalation and information leakage.
+
+Design for compliance with applicable data-protection, healthcare, institutional, and research requirements in the jurisdictions where SIMONIUM operates.
+
+Do not expose personal or sensitive information in public profiles, search indexes, analytics, logs, exports, or external AI services without appropriate authorization.
+
+PART XIII — TESTING AND QUALITY ASSURANCE
+
+26. Test Real User Workflows
+
+Test the implementation with separate accounts representing the relevant roles.
+
+Verify:
+
+- Registration and login.
+- Password recovery and verification.
+- Role approval and revocation.
+- Private administrator access.
+- Role-specific dashboards.
+- Database reads and writes.
+- Unauthorized direct API requests.
+- Cross-module access rules.
+- Information submission and review.
+- Correction and approval workflows.
+- Search and filtering.
+- Language selection and fallback.
+- Country and phone-number validation.
+- Notifications.
+- File permissions.
+- Backup and restore.
+- Logout and session expiration.
+- Mobile and Android compatibility.
+- Existing features after each change.
+
+Test that users cannot read, change, delete, or export another user's private records without explicit authorization.
+
+Use test data rather than real patient records or other sensitive production data.
+
+Distinguish automated tests, manual tests, and features that have not yet been tested.
+
+PART XIV — IMPLEMENTATION ORDER
+
+27. Development Phases
+
+Proceed through the following phases, adapting to the actual state of the project.
+
+Phase 1 — Project inspection and preservation
+Inspect the existing project and document actual implementation status.
+
+Phase 2 — Authentication and identity
+Complete registration, login, verification, password recovery, user profiles, and role requests.
+
+Phase 3 — Roles and private administration
+Complete role-specific dashboards, server-side permissions, and protected administrator functions.
+
+Phase 4 — Shared database and information lifecycle
+Complete the data models, access policies, submission, review, correction, verification, and audit workflows.
+
+Phase 5 — Core module integration
+Integrate Health, Education, Research & Discovery, and Community through authorized data flows.
+
+Phase 6 — Global access
+Implement extensible language support, country selection, calling codes, and phone validation.
+
+Phase 7 — Search, AI, and collaboration
+Implement secure search, related-information discovery, notifications, and configured AI assistance.
+
+Phase 8 — Quality assurance
+Test workflows, permissions, backend operations, privacy, and mobile compatibility. Fix identified problems.
+
+Phase 9 — Final review and Android preparation
+Review the entire project, document setup requirements, resolve errors, and prepare the appropriate Android build process.
+
+Do not deploy or publicly publish the project before the planned implementation, security review, and testing are complete.
+
+PART XV — DEVELOPMENT REPORTS
+
+28. Required Report After Each Phase
+
+At the end of each phase, provide a concise but accurate report containing:
+
+1. Existing functionality inspected.
+2. Features actually implemented.
+3. Exact files created or changed.
+4. Tests performed and actual results.
+5. Incomplete features and known errors.
+6. Database migrations or configuration required.
+7. External services that need credentials or setup.
+8. The next concrete implementation task.
+
+Do not claim that a backend is connected, an SMS has been sent, permissions are secure, an APK has been generated, or a deployment has succeeded unless the relevant operation has actually been verified.
+
+If you encounter a missing credential or external service, implement the appropriate integration structure and clearly explain what configuration remains necessary. Never substitute fake success for a real result.
+
+FINAL PRODUCT REQUIREMENT
+
+Build SIMONIUM as one coherent, secure, multilingual, extensible platform that connects people and information across education, healthcare, research, discovery, communities, and institutions.
+
+Its central information cycle must be:
+
+SUBMISSION → ORGANIZATION → REVIEW → VERIFICATION → AUTHORIZED SHARING → LEARNING AND RESEARCH → APPROVED FINDINGS → CONTINUED DISCOVERY
+
+Every role must have a clear purpose. Every information flow must have an appropriate authorization rule. Every important finding must have traceable sources and review status. Every sensitive record must remain protected.
+
+Continue from the existing project, preserve working code, implement real functionality, test the results, fix errors, and only then prepare for publication.
+
+Begin by inspecting the existing SIMONIUM project and implementing the highest-priority incomplete feature.

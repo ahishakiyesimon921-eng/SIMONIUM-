@@ -1,0 +1,6 @@
+{
+  "name": "SIMONIUM",
+  "description": "Scientific Information Management, Organization, Network, Intelligence and Unified Multidisciplinary Platform connecting healthcare, education, research, and community discovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
